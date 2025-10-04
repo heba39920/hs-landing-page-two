@@ -8,7 +8,7 @@ const Masterlayout = () => {
     <div className="bg-[var(--main-color)] text-white">
 
    
-    <div className="w-[calc(100%-50px)]] md:w-[calc(100%-90px)] mx-auto pt-15 ">
+    <div className="w-[calc(100%-50px)] md:w-[calc(100%-90px)] mx-auto pt-15 ">
         <NavBar/>
         <Outlet/>  
     </div> 
