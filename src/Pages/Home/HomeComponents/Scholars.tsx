@@ -1,12 +1,11 @@
 import { ChevronRight } from "lucide-react";
-import { scholars } from "../../../assets/images";
+import { bgBlue, scholars } from "../../../assets/images";
 import {motion} from "framer-motion";
 const Scholars = () => {
   return (
-    <section className="py-24" aria-label="Scholars section">
+    <section className="py-24 " aria-label="Scholars section">      
       <article className="max-w-screen-xl mx-auto px-4">
         <div className="grid md:grid-cols-2 items-center gap-12 md:gap-8">
-          {/* Image block with lazy loading for performance */}
             <motion.div
           initial={{ opacity: 0, x: -100 }}  
           whileInView={{ opacity: 1, x: 0 }} 
@@ -20,12 +19,15 @@ const Scholars = () => {
             />
           </motion.div>
 
-          {/* Text content block */}
+       
           <motion.div
           initial={{ opacity: 0, x: 100 }}  
           whileInView={{ opacity: 1, x: 0 }} 
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }} className="space-y-5">
+          viewport={{ once: true }} className="space-y-5 ">
+         
+ <img src={bgBlue} alt="background" className="absolute right-0"/>
+            
             <span
               className="text-[var(--text-purple)] text-xs md:text-2xl font-semibold block mb-4"
               aria-label="Section label"
