@@ -40,14 +40,14 @@ const NavBar = () => {
 
   return (
     <header aria-label="Main navigation">
-      <div className=" p-[1.5px] bg-transparent md:bg-gradient-to-r from-[var(--primary-color)] via-transparent to-transparent rounded-full">
-        <div className="bg-[var(--main-color)] md:px-12  rounded-full">
+      <div className=" p-[1.5px] bg-transparent lg:bg-gradient-to-r from-[var(--primary-color)] via-transparent to-transparent rounded-full">
+        <div className="bg-[var(--main-color)] lg:px-12  rounded-full">
           <nav
             ref={navRef}
             className={`text-[var(--text-color)] ${scrolled ? "scrolled" : ""}`}
             aria-label="Site navigation"
           >
-            <div className="flex md:flex-nowrap flex-wrap items-center justify-between">
+            <div className="flex lg:flex-nowrap flex-wrap items-center justify-between">
               <a aria-label="Site logo" href="/" className="flex gap-[7px] items-center">
                 <img src={logo} alt="Site logo" />
                 <img src={logoWord} alt="Site wordMark" />
@@ -57,7 +57,7 @@ const NavBar = () => {
                 data-collapse-toggle="navbar-default"
                 onClick={() => setToggled((t) => !t)}
                 type="button"
-                className="inline-flex items-center p-2 w-10 h-10 justify-center border border-white rounded-lg md:hidden hover:bg-gray-500 transition focus:outline-none focus:ring-2 focus:ring-gray-200"
+                className="inline-flex items-center p-2 w-10 h-10 justify-center border border-white rounded-lg lg:hidden hover:bg-gray-500 transition focus:outline-none focus:ring-2 focus:ring-gray-200"
                 aria-controls="navbar-default"
                 aria-expanded={toggled}
                 aria-label={toggled ? "Close menu" : "Open menu"}
@@ -68,9 +68,9 @@ const NavBar = () => {
 
               <div
                 id="navbar-default"
-                className={`${toggled ? "block" : "hidden"} w-full md:block md:w-auto`}
+                className={`${toggled ? "block" : "hidden"} w-full lg:block lg:w-auto`}
               >
-                <ul className="flex flex-col md:flex-row gap-5 md:bg-transparent p-4 md:p-0 mt-4 md:mt-0 border md:border-0 rounded-lg md:rounded-none md:overflow-visible lg:gap-9">
+                <ul className="flex flex-col lg:flex-row gap-5 lg:bg-transparent p-4 lg:p-0 mt-4 lg:mt-0 border lg:border-0 rounded-lg lg:rounded-none lg:overflow-visible lg:gap-9">
                   {links.map((link) => (
                     <li key={link.label}>
                       <NavLink
@@ -86,12 +86,12 @@ const NavBar = () => {
                     </li>
                   ))}
 
-                  <li className="md:hidden ">
+                  <li className="lg:hidden ">
                     <div className="mt-2 flex justify-between">
                     <button className="btn bg-[var(--primary-color)] text-[var(--main-color)] px-[15px] py-[10px] rounded-tl-[0] rounded-full text-sm font-bold">
                   Start Now
                 </button>
-                 <div className="md:hidden items-center gap-6 flex ">
+                 <div className="lg:hidden items-center gap-6 flex ">
                      <img src={flag} className="h-4 w-6" alt="language switcher" />
                      <Moon />
                   </div>
@@ -100,12 +100,12 @@ const NavBar = () => {
                 
                 </ul>
               </div>
-  <div className="hidden items-center gap-6 md:flex">
+  <div className="hidden items-center gap-6 lg:flex">
                      <img src={flag} className="h-4 w-6" alt="language switcher" />
                      <Moon />
                   </div>
               {/* Right-side action for larger screens */}
-              <div className="hidden md:flex items-center px-2 text-sm md:text-[16px]">
+              <div className="hidden lg:flex items-center px-2 text-sm lg:text-[16px]">
                 <button className="btn bg-[var(--primary-color)] text-[var(--main-color)] px-[52.5px] py-[31.5px] rounded-tl-[0] rounded-full text-lg font-bold">
                   Start Now
                 </button>

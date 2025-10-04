@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-8">
         <div className="min-w-[300px]">
           <div className="relative flex ">
-            <h1 className=" w-[1080px] text-[45px] md:text-[60px] lg:text-[88px] text-[var(--primary-color)] font-bold capitalize leading-tight">
+            <h1 className="w-full lg:w-[1080px] text-[45px] md:text-[60px] lg:text-[88px] text-[var(--primary-color)] font-bold capitalize leading-tight">
               <span className="block relative h-[1.2em] "
               
               >
