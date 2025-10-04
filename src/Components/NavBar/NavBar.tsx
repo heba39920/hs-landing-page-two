@@ -68,7 +68,7 @@ const NavBar = () => {
 
               <div
                 id="navbar-default"
-                className={`${toggled ? "block" : "hidden"} w-full lg:block lg:w-auto`}
+            className={`transition-all duration-800 ${toggled ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"} w-full lg:block lg:w-auto overflow-hidden`}
               >
                 <ul className="flex flex-col lg:flex-row gap-5 lg:bg-transparent p-4 lg:p-0 mt-4 lg:mt-0 border lg:border-0 rounded-lg lg:rounded-none lg:overflow-visible lg:gap-9">
                   {links.map((link) => (
