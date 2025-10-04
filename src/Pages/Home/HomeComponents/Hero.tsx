@@ -27,7 +27,7 @@ const Hero = () => {
                   className="absolute left-0 top-0 "
                 />
               </span>
-              <span className="text-white block mt-22">Embedded.</span>
+              <span className="text-white block mt-10 md:mt-18 lg:mt-22">Embedded.</span>
             </h1>
           </div>
           <p className="text-[var(--text-grey)] text-xl md:text-[26px] capitalize max-w-[612px] mt-6">
