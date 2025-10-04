@@ -15,8 +15,8 @@ const Hero = () => {
       <div className="flex flex-wrap md:flex-nowrap items-center justify-center gap-8">
         <div className="min-w-[300px]">
           <div className="relative flex ">
-            <h1 className="w-full lg:w-[1080px] text-[45px] md:text-[60px] lg:text-[88px] text-[var(--primary-color)] font-bold capitalize leading-tight">
-              <span className="block relative h-[1.2em] "
+            <h1 className=" text-[45px] md:text-[60px] lg:text-[88px] text-[var(--primary-color)] font-bold capitalize leading-tight">
+              <span className="inline-block relative h-[1.2em] "
               
               >
                 <TypeAnimation
@@ -27,7 +27,7 @@ const Hero = () => {
                   className="absolute left-0 top-0 "
                 />
               </span>
-              <span className="text-white block">Embedded.</span>
+              <span className="text-white block mt-22">Embedded.</span>
             </h1>
           </div>
           <p className="text-[var(--text-grey)] text-xl md:text-[26px] capitalize max-w-[612px] mt-6">
