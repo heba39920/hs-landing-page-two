@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    object-fit: cover;
+}
+:root{
+    --main-color: #0f0e0d;
+    --primary-color : #E3FBC1;
+    --text-grey : #C9C9C9;
+    --text-purple:#ECBDFF;
+}
