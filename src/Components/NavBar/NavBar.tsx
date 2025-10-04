@@ -49,8 +49,8 @@ const NavBar = () => {
           >
             <div className="flex lg:flex-nowrap flex-wrap items-center justify-between">
               <a aria-label="Site logo" href="/" className="flex gap-[7px] items-center">
-                <img src={logo} alt="Site logo" />
-                <img src={logoWord} alt="Site wordMark" />
+                <img src={logo} alt="Site logo"   loading="lazy"/>
+                <img src={logoWord} alt="Site wordMark"   loading="lazy"/>
               </a>
               
               <button
@@ -75,7 +75,7 @@ const NavBar = () => {
                     <li key={link.label}>
                       <NavLink
                         to={link.path}
-                        className="flex items-center gap-3 font-semibold"
+                        className="flex items-center gap-3 font-semibold hover:text-[var(--primary-color)] transition-transform"
                         aria-label={`${link.label} section`}
                         title={link.label}
                         onClick={handleNavigate}
@@ -92,7 +92,7 @@ const NavBar = () => {
                   Start Now
                 </button>
                  <div className="lg:hidden items-center gap-6 flex ">
-                     <img src={flag} className="h-4 w-6" alt="language switcher" />
+                     <img src={flag} className="h-4 w-6" alt="language switcher"   loading="lazy" />
                      <Moon />
                   </div>
                     </div>
@@ -101,12 +101,14 @@ const NavBar = () => {
                 </ul>
               </div>
   <div className="hidden items-center gap-6 lg:flex">
-                     <img src={flag} className="h-4 w-6" alt="language switcher" />
-                     <Moon />
+                     <img src={flag} className="h-4 w-6 cursor-pointer" alt="language switcher"   loading="lazy"/>
+                     <Moon className="cursor-pointer"/>
                   </div>
               {/* Right-side action for larger screens */}
               <div className="hidden lg:flex items-center px-2 text-sm lg:text-[16px]">
-                <button className="btn bg-[var(--primary-color)] text-[var(--main-color)] px-[52.5px] py-[31.5px] rounded-tl-[0] rounded-full text-lg font-bold">
+                <button 
+                type="button"
+                className="cursor-pointer bg-[var(--primary-color)] text-[var(--main-color)] px-[52.5px] py-[31.5px] rounded-tl-[0] rounded-full text-lg font-bold hover:scale-105 transition-transform">
                   Start Now
                 </button>
               </div>
